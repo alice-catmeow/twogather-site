@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>植在 TwoGather｜智慧陪伴花盆官方網站</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Iansui&family=Noto+Sans+TC:wght@400;500;700;800&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 導覽列 -->
+    <header class="navbar">
+      <div class="container nav-inner">
+        <a href="#top" class="brand">
+          <img data-asset="logo" alt="植在 TwoGather LOGO" />
+          <div class="brand-text">
+            <span class="brand-zh">植在</span>
+            <span class="brand-en">TwoGather</span>
+          </div>
+        </a>
+
+        <nav>
+          <ul class="nav-links" id="navLinks">
+            <li><a href="#top" class="active">首頁</a></li>
+            <li><a href="#products">商品介紹</a></li>
+            <li><a href="#plants">植物選品</a></li>
+            <li><a href="#app">APP 功能</a></li>
+            <li><a href="#story">品牌故事</a></li>
+            <li><a href="#faq">常見問題</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-actions">
+          <button type="button" class="icon-btn" id="openCartBtn" aria-label="開啟預購清單">
+            <span>🛒 選購清單</span>
+            <span class="cart-badge" id="cartBadge">0</span>
+          </button>
+          <button type="button" class="btn-primary" id="navOrderBtn">立即選購</button>
+          <button type="button" class="nav-toggle" id="navToggle" aria-label="切換選單">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- 首頁主視覺 Hero -->
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="hero-badge">植在 TwoGather</span>
+            <h1>智慧陪伴花盆</h1>
+            <p class="hero-subtitle">
+              兩台花盆，一份連結。<br />
+              讓愛、陪伴與綠意，持續在彼此的日常生長。<br />
+              用不打擾的雙人共養，把「我有想到你」放進每天的桌面風景。
+            </p>
+            <div class="hero-cta-group">
+              <a href="#products" class="btn-primary">探索雙機陪伴體驗 &gt;</a>
+              <a href="#plants" class="btn-secondary">瀏覽 36 種真實植栽</a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-image-card">
+              <img data-asset="heroPair" alt="植在 TwoGather 白色原機一盒兩入智慧陪伴花盆" />
+              <div class="hero-slogan-float">∴ 人不在身邊，愛依然植在 ♡</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 四大核心價值 -->
+      <section class="feature-strip">
+        <div class="container feature-grid">
+          <div class="feature-item">
+            <div class="feature-icon">🤍</div>
+            <div>
+              <h3>遠距陪伴</h3>
+              <p>雙機連線，傳遞不催促的心意</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🌱</div>
+            <div>
+              <h3>輕鬆養護</h3>
+              <p>依植物需求提醒，照顧更簡單</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">📋</div>
+            <div>
+              <h3>任務養成</h3>
+              <p>21 天雙人共養，留下生活紀錄</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon">🎁</div>
+            <div>
+              <h3>點數獎勵</h3>
+              <p>累積 21 點可兌換肥料膠囊包</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 首頁三大入口卡片 -->
+      <section class="section">
+        <div class="container overview-grid">
+          <article class="overview-card">
+            <div>
+              <div class="overview-thumb">
+                <img data-asset="giftBox" alt="智慧花盆一盒兩入雙機禮盒" />
+              </div>
+              <div style="margin-top: 14px"><span class="pill-tag">商品方案</span></div>
+              <h3>智慧花盆一盒兩入</h3>
+              <ul class="check-list">
+                <li>白色原機，兩台同款</li>
+                <li>真實小型植栽（36 種可選）</li>
+                <li>可加購六色品牌領帶配件</li>
+              </ul>
+            </div>
+            <a href="#products" class="btn-primary">了解商品 &gt;</a>
+          </article>
+
+          <article class="overview-card">
+            <div>
+              <div class="overview-thumb">
+                <img data-asset="appUi" alt="植在 TwoGather APP 介面示意" />
+              </div>
+              <div style="margin-top: 14px"><span class="pill-tag">專屬 APP</span></div>
+              <h3>植在 TwoGather APP</h3>
+              <ul class="check-list">
+                <li>植物狀態與澆水需求提醒</li>
+                <li>雙機互動訊息（10 字跑馬燈示意）</li>
+                <li>21 天任務與點數兌換植物用品</li>
+              </ul>
+            </div>
+            <a href="#app" class="btn-primary">探索 APP 功能 &gt;</a>
+          </article>
+
+          <article class="overview-card">
+            <div>
+              <div class="overview-thumb">
+                <img data-asset="singlePot" alt="真實小型多肉植物與智慧花盆" />
+              </div>
+              <div style="margin-top: 14px"><span class="pill-tag">植物選品</span></div>
+              <h3>36 種實際植栽可選</h3>
+              <ul class="check-list">
+                <li>多肉、觀葉、香草、開花植物</li>
+                <li>可拆卸內盆，非種子包</li>
+                <li>依日照與澆水需求分類指引</li>
+              </ul>
+            </div>
+            <a href="#plants" class="btn-primary">瀏覽植物名單 &gt;</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- 商品介紹 -->
+      <section id="products" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="pill-tag">01｜硬體與禮盒設計</span>
+            <h2>白色原機 × 一盒兩入雙人禮盒</h2>
+            <p>
+              圓潤短蛋形白色霧面機身、2 吋黑色微笑表情螢幕與底座暖光燈。為紀念日、生日與遠距出發前準備的共養禮物。
+            </p>
+          </div>
+
+          <div class="product-grid">
+            <!-- 左側圖片切換 -->
+            <div class="gallery-box">
+              <div class="gallery-main">
+                <img
+                  id="galleryMainImg"
+                  data-asset="giftBox"
+                  alt="植在 TwoGather 雙機禮盒開箱圖"
+                />
+              </div>
+              <div class="gallery-thumbs">
+                <button
+                  type="button"
+                  class="thumb-btn active"
+                  data-gallery-asset="giftBox"
+                  data-alt="雙機禮盒開箱圖"
+                >
+                  <img data-asset="giftBox" alt="雙機禮盒" />
+                </button>
+                <button
+                  type="button"
+                  class="thumb-btn"
+                  data-gallery-asset="heroPair"
+                  data-alt="白色原機雙機與外盒合照"
+                >
+                  <img data-asset="heroPair" alt="雙機合照" />
+                </button>
+                <button
+                  type="button"
+                  class="thumb-btn"
+                  data-gallery-asset="sizeSpec"
+                  data-alt="單機尺寸與重量規格示意"
+                >
+                  <img data-asset="sizeSpec" alt="尺寸規格" />
+                </button>
+                <button
+                  type="button"
+                  class="thumb-btn"
+                  data-gallery-asset="threeViews"
+                  data-alt="單機正視、側視與背視圖"
+                >
+                  <img data-asset="threeViews" alt="商品三視圖" />
+                </button>
+              </div>
+            </div>
+
+            <!-- 右側選購與規格面板 -->
+            <div class="product-panel">
+              <span class="pill-tag">已定案外觀規格示意</span>
+              <h3 style="margin: 10px 0 6px; font-size: 1.5rem">植在 TwoGather 雙人共生禮盒</h3>
+              <p style="margin: 0; color: var(--brown-light); font-size: 0.94rem">
+                內含兩台同款白色原機、兩條傳輸線、快速入門指南與可拆卸植栽內盆組合。
+              </p>
+
+              <div class="spec-pills">
+                <span class="spec-pill">📏 機身 11.4 × 10 × 9.6 cm</span>
+                <span class="spec-pill">⚖ 約 270 g（不含植物）</span>
+                <span class="spec-pill">🖥 2 吋表情螢幕</span>
+                <span class="spec-pill">🌿 可拆式真實植栽內盆</span>
+              </div>
+
+              <div class="collar-picker">
+                <h4>選配：品牌六色領帶自由搭（加價選購）</h4>
+                <div style="font-size: 0.84rem; color: var(--brown-light); margin-bottom: 8px">
+                  A 盆領帶顏色：
+                </div>
+                <div class="swatch-row" id="collarSwatchesA"></div>
+
+                <div style="font-size: 0.84rem; color: var(--brown-light); margin: 14px 0 8px">
+                  B 盆領帶顏色：
+                </div>
+                <div class="swatch-row" id="collarSwatchesB"></div>
+
+                <div class="pair-preview">
+                  <span id="collarPairSummary">搭配預覽中…</span>
+                </div>
+              </div>
+
+              <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px">
+                <button type="button" class="btn-secondary" id="addGiftBoxBtn">
+                  加入原機雙人禮盒
+                </button>
+                <button type="button" class="btn-primary" id="addWithCollarsBtn">
+                  禮盒＋自選雙領帶加入清單
+                </button>
+              </div>
+
+              <div class="notice-box">
+                ※ 備註：目前頁面為上市前官網視覺與功能示意；正式售價、早鳥優惠與出貨交期將於品牌核定後公告。
+              </div>
+            </div>
+          </div>
+
+          <!-- 六色領帶展示圖 -->
+          <div class="collar-showcase">
+            <img data-asset="collarSix" alt="領帶六色加價選購展示圖" />
+            <div>
+              <span class="pill-tag">配件設計</span>
+              <h3 style="margin: 12px 0 10px; font-size: 1.4rem">六色領帶，搭配彼此的專屬默契</h3>
+              <p style="color: var(--brown-light); margin-bottom: 14px">
+                商品主機統一為柔和白色原機，並提供鼠尾草綠、奶油米白、奶茶杏、柔霧粉、薄荷藍與深灰棕六款領帶配件加價選購，領帶中央飾有「植在」愛心雙芽識別圖標。
+              </p>
+              <ul class="check-list">
+                <li>鼠尾草綠 #8FAE9A｜品牌主視覺</li>
+                <li>奶油米白 #F7F3EC｜溫暖日系百搭</li>
+                <li>奶茶杏 #D8B89C｜柔和溫潤質感</li>
+                <li>柔霧粉 #E8D4D8｜送禮情感點綴</li>
+                <li>薄荷藍 #A9D8D0｜清新活力風格</li>
+                <li>深灰棕 #5E5751｜沉穩內斂搭配</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 36 種植物選品 -->
+      <section id="plants" class="section">
+        <div class="container">
+          <div class="section-header">
+            <span class="pill-tag">02｜真實小型植栽</span>
+            <h2>36 種實際植栽選品提案</h2>
+            <p>
+              不是種子包，而是搭配可拆卸內盆的真實小型盆栽。依日照與澆水需求分類，挑選最適合放在你與對方桌面的綠意室友。
+            </p>
+          </div>
+
+          <div class="plant-controls">
+            <div class="filter-tabs" role="tablist" aria-label="植物分類篩選">
+              <button type="button" class="filter-tab active" data-filter="all">全部 (36)</button>
+              <button type="button" class="filter-tab" data-filter="succulent">
+                多肉／迷你觀葉 (12)
+              </button>
+              <button type="button" class="filter-tab" data-filter="vine-herb">
+                垂吊藤蔓／香草 (12)
+              </button>
+              <button type="button" class="filter-tab" data-filter="flower-special">
+                開花／特色小植栽 (12)
+              </button>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 12px">
+              <input
+                type="search"
+                id="plantSearchInput"
+                class="plant-search"
+                placeholder="搜尋植物名稱或關鍵字…"
+                aria-label="搜尋植物"
+              />
+              <span id="plantResultCount" style="font-size: 0.86rem; color: var(--brown-light)">
+                顯示 36 / 36 種植栽
+              </span>
+            </div>
+          </div>
+
+          <div class="plants-grid" id="plantsGrid"></div>
+
+          <p style="text-align: center; font-size: 0.84rem; color: var(--brown-light); margin-top: 22px">
+            ※ 選品說明：以上為 36 種候選品種清單，實際搭配與可供應品種將依育苗、季節與供貨狀態調整；網站不保證植物「養不死」，並提供依需求照顧指引。
+          </p>
+        </div>
+      </section>
+
+      <!-- APP 功能與 21 天共養 -->
+      <section id="app" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="pill-tag">03｜APP 與共養體驗</span>
+            <h2>用專屬 APP 綁定雙盆，讓想念成為日常</h2>
+            <p>
+              不必每天催促訊息回覆，也能看見對方的照顧紀錄，送出不打擾的輕巧問候。
+            </p>
+          </div>
+
+          <div class="app-grid">
+            <div class="app-frame">
+              <img data-asset="appUi" alt="植在 TwoGather APP 10 頁功能畫面設計" />
+            </div>
+
+            <div class="marquee-demo">
+              <span class="pill-tag">互動體驗示意</span>
+              <h3 style="margin: 10px 0 6px">雙機跑馬燈傳情預覽</h3>
+              <p style="margin: 0; font-size: 0.9rem; color: var(--brown-light)">
+                在 APP 輸入最多 10 字的短訊，對方的花盆螢幕將以溫暖跑馬燈顯示（此為介面設計示意）。
+              </p>
+
+              <div class="pot-screen-sim">
+                <div class="pot-screen-label">對方花盆 2 吋螢幕顯示效果</div>
+                <div class="pot-screen-text" id="potScreenText">你在哪？</div>
+              </div>
+
+              <div class="marquee-input-row">
+                <input
+                  type="text"
+                  id="marqueeInput"
+                  maxlength="10"
+                  placeholder="輸入最多 10 字短訊（例如：想你了♡）"
+                />
+                <button type="button" class="btn-primary" id="marqueeSendBtn">傳送預覽</button>
+              </div>
+
+              <ul class="check-list" style="margin-top: 20px">
+                <li>植物狀態顯示：濕度、光照、上次澆水時間提醒</li>
+                <li>註冊即贈「復活卡 × 1」，減輕照顧焦慮</li>
+                <li>累積 21 天任務點數，可兌換「肥料膠囊包」</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-grid">
+            <article class="timeline-card">
+              <div class="timeline-day">DAY 1–7</div>
+              <h4>認領我們的植物</h4>
+              <p>完成雙人綁定、替植物命名，分享一張各自的桌面照片。</p>
+              <div class="quote-sample">「新室友報到，請多多植教。」</div>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-day">DAY 8–14</div>
+              <h4>交換兩地的日常</h4>
+              <p>觀察光照與植物實際需要的照顧，分享一句生活近況並閱讀雙人週報。</p>
+              <div class="quote-sample">「今天替我們曬了太陽，也留一點給你。」</div>
+            </article>
+            <article class="timeline-card">
+              <div class="timeline-day">DAY 15–21</div>
+              <h4>收藏共同的成長</h4>
+              <p>回顧照片與照顧紀錄，寫下下一週想一起做的事（不強迫每日打卡或天天澆水）。</p>
+              <div class="quote-sample">完成 21 天累積點數，即可換購肥料膠囊包。</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 品牌故事 -->
+      <section id="story" class="section">
+        <div class="container">
+          <div class="story-card">
+            <div>
+              <span class="pill-tag">04｜品牌主張</span>
+              <h2 style="margin: 12px 0; font-size: 1.9rem">你不在旁邊，也植在心上</h2>
+              <p style="color: var(--brown-light)">
+                《植在 TwoGather》為異地情侶、遠距閨蜜與分隔兩地的家人設計。比起「快回我訊息」的壓力，我們更希望送出一份能一起照顧的禮物——讓思念像桌面植物一樣安靜而持續地長大。
+              </p>
+              <p style="color: var(--brown-light); margin-bottom: 0">
+                一盒兩入的設計，讓買禮物的人與收禮物的人都能在各自書桌上放上一盆相同的小生命，在忙碌日子裡保留無壓力的交集。
+              </p>
+            </div>
+            <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-card)">
+              <img data-asset="singlePot" alt="植在 TwoGather 白色療癒智慧花盆" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 常見問題 FAQ -->
+      <section id="faq" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <span class="pill-tag">05｜常見問題</span>
+            <h2>下單前你可能想了解的事</h2>
+          </div>
+
+          <div class="faq-list">
+            <div class="faq-item open">
+              <button type="button" class="faq-q">
+                <span>Q1. 雙人禮盒裡面有包含什麼？機身有其他顏色嗎？</span>
+                <span>＋</span>
+              </button>
+              <div class="faq-a">
+                雙人禮盒為「一盒兩入」，內含兩台同款白色霧面原機、兩條傳輸線、快速入門指南與可搭配的真實小型植栽內盆。主機固定為白色原機，可另行加價選購六款品牌色領帶配件。
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q">
+                <span>Q2. 如果我平常很不會照顧植物，會不會很快養死？</span>
+                <span>＋</span>
+              </button>
+              <div class="faq-a">
+                植栽採用可拆卸內盆設計，官網也依多肉、觀葉、香草與開花植物標註日照與澆水需求，APP 會依照植物需求提示照顧（而非強迫每天澆水）。同時我們不會誇大宣稱「保證養不死」，讓照顧回歸自然與真實。
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q">
+                <span>Q3. 收到禮盒後要怎麼完成雙人綁定？</span>
+                <span>＋</span>
+              </button>
+              <div class="faq-a">
+                開箱後掃描禮盒內的快速入門 QR 碼下載／開啟 APP，先綁定其中一台花盆並產生邀請連結，傳給另一半或親友即可完成雙盆連結。（實際網路配對與遠距同步規格以上市版實作為準）
+              </div>
+            </div>
+
+            <div class="faq-item">
+              <button type="button" class="faq-q">
+                <span>Q4. 目前可以正式付款下單嗎？</span>
+                <span>＋</span>
+              </button>
+              <div class="faq-a">
+                目前網站為上市籌備與品牌視覺示意版，正式商品定價、早鳥優惠與出貨交期將在確認後於本頁面公布；你可以先使用「選購清單」組合喜愛的領帶顏色並複製預購意向。
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <strong style="font-size: 1.2rem">植在 TwoGather</strong>
+            <p style="margin: 6px 0 0; opacity: 0.85; font-size: 0.9rem">
+              人不在身邊，愛依然植在。
+            </p>
+          </div>
+          <div style="font-size: 0.88rem; opacity: 0.88">
+            <div>頁面導覽：首頁 / 商品介紹 / 植物選品 / APP 功能 / 品牌故事 / 常見問題</div>
+            <div style="margin-top: 4px">
+              狀態說明：本網站內容依品牌視覺與企劃規格建置，部分 APP 互動與購物流程為展示示意。
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 植在 TwoGather. All rights reserved.</span>
+          <span>建議搭配 Google Sites 內嵌或靜態託管發佈</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 選購清單側邊欄 -->
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="預購選購清單">
+      <div>
+        <div style="display: flex; justify-content: space-between; align-items: center">
+          <h3 style="margin: 0">預購意向清單</h3>
+          <button type="button" class="icon-btn" id="closeCartBtn">✕ 關閉</button>
+        </div>
+        <p style="font-size: 0.84rem; color: var(--brown-light); margin: 8px 0 0">
+          可先挑選雙人禮盒與領帶配色組合，複製明細後填寫 Google 預購表單。
+        </p>
+        <div class="cart-items" id="cartItemsList"></div>
+      </div>
+
+      <div>
+        <button type="button" class="btn-primary" style="width: 100%" id="copyOrderSummaryBtn">
+          複製預購意向明細
+        </button>
+        <p
+          id="copyOrderFeedback"
+          style="font-size: 0.82rem; color: var(--sage-deep); margin: 8px 0 0; min-height: 1.2em"
+        ></p>
+      </div>
+    </aside>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
